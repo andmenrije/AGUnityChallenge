@@ -65,6 +65,7 @@ public class AudioManager: MonoBehaviour
             {
                 AudioSource newAudioSource = gameObject.AddComponent<AudioSource>();
                 newAudioSource.clip = file.soundClip;
+                newAudioSource.volume = file.volumeLevel;
                 newAudioSource.loop = file.loop;
                 soundMap.Add(file.audioType, newAudioSource);
             }

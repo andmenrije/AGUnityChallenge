@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         AudioManager.Instance.PlayAudio(AudioManager.AudioType.Background);
+        CounterManager.Instance.ResetScore();
     }
 
     // Update is called once per frame

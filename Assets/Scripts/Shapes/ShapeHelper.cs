@@ -46,6 +46,7 @@ public class ShapeHelper : MonoBehaviour, IShape
             {
                 SetColor(UnityEngine.Random.ColorHSV());
                 AudioManager.Instance.PlayAudio(AudioManager.AudioType.Click1);
+                CounterManager.Instance.AddOneToScore();
             }
             else
             {
