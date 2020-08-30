@@ -45,6 +45,7 @@ public class ShapeHelper : MonoBehaviour, IShape
             if(diffClickTime <= DOUBLE_CLICK_THRESHOLD)
             {
                 SetColor(UnityEngine.Random.ColorHSV());
+                AudioManager.Instance.PlayAudio(AudioManager.AudioType.Click1);
             }
             else
             {
